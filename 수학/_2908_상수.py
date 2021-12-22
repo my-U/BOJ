@@ -1,5 +1,5 @@
 A, B = input().split()
-A = int("".join(reversed(A)))
+A = int("".join(reversed(A))) # 반대로 뒤집은 후 join으로 연결
 B = int("".join(reversed(B)))
 
 print(A if A > B else B)
