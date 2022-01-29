@@ -11,8 +11,8 @@ for i in range(M, N+1):
         if S == 0:
             L.append(i)
 
-if sum(L) == 0:
-    print(-1)
-else:
+if sum(L) > 0:
     print(sum(L))
     print(min(L))
+else:
+    print(-1)
