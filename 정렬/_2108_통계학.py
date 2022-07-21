@@ -8,8 +8,9 @@ for i in range(N):
     L[i] = int(sys.stdin.readline())
 L.sort()
 
-count = Counter(L).most_common(2) # 여러개일 경우 두 번째로 작은 값을 출력하기 때문에 2개의 데이터만 가져옴
-
+# Counter.most_common() : 데이터의 개수가 많은 순으로 정렬된 배열을 리턴함 
+count = Counter(L).most_common(2) # 여러개일 경우 두 번째로 작은 값을 출력해야하기 때문에 2개의 데이터만 가져옴
+print(count)
 print(round(sum(L) / N)) # 산술평균
 print(L[int(N / 2)]) # 중앙값
 # 최빈값
