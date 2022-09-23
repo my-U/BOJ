@@ -13,7 +13,7 @@ for i in L:
 for i in P:
     if i in dict:
         print(1, end=' ')
-    else:
+    else: 
         print(0, end=' ')
 
 # 처음엔 list L과 P로만 포함되는지 찾으려고 했는데
