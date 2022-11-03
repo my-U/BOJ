@@ -7,7 +7,7 @@ public class _3003_ {
     public static void main(String[] args) throws IOException{
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer str = new StringTokenizer(input.readLine());
-
+        
         int king = Integer.parseInt(str.nextToken());
         int queen = Integer.parseInt(str.nextToken());
         int rook = Integer.parseInt(str.nextToken());
@@ -21,5 +21,14 @@ public class _3003_ {
         System.out.print(2 - bishop + " ");
         System.out.print(2 - knight + " ");
         System.out.print(8 - pawn + " ");
+
+        // 메모리 사용도 더 적고 속도도 더 빠름
+        // StringBuilder sb = new StringBuilder();
+        // int[] chess = {1, 1, 2, 2, 2, 8};
+
+        // for(int i = 0; i < 6; i ++)
+        //      sb.append(chess[i] - Integer.parseInt(str.nextToken())).append(' ');
+
+        // System.out.println(sb.toString());
     }
 }
