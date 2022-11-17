@@ -23,7 +23,7 @@ public class _15552_ {
             sb.append(sum).append('\n');
         }
         System.out.println(sb);
-        // output.write(sb); 출력할 내용을 담음. 콘솔에 출력은 안됨
+        // output.write(sb.toString()); 출력할 내용을 담음. 콘솔에 출력은 안됨
         // output.flush(); 버퍼를 비워냄과 동시에 콘솔에 출력함
         // output.close(); 스트림을 닫음
     }
