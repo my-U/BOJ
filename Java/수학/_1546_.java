@@ -18,7 +18,6 @@ public class _1546_ {
             sum += num; 
             if(max < num) max = num;
         }
-        
         System.out.println(sum / max * 100 / N);
     }
 }
